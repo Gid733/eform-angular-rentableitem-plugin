@@ -16,27 +16,29 @@ import {
 } from './components';
 import {ContractInspectionCaseRoutingModule} from './contract-inspection-case-routing.module';
 import {CasesModule} from 'src/app/modules';
+import {SharedPnModule} from 'src/app/plugins/modules/shared/shared-pn.module';
 
 @NgModule({
   declarations: [
     ContractInspectionCaseHeaderComponent,
     ContractInspectionCasePageComponent
   ],
-  imports: [
-    TranslateModule,
-    MDBBootstrapModule,
-    EformSharedModule,
-    ContractInspectionCaseRoutingModule,
-    CommonModule,
-    NgSelectModule,
-    EformImportedModule,
-    GallerizeModule,
-    LightboxModule,
-    GalleryModule,
-    FormsModule,
-    FontAwesomeModule,
-    CasesModule
-  ]
+    imports: [
+        TranslateModule,
+        MDBBootstrapModule,
+        EformSharedModule,
+        ContractInspectionCaseRoutingModule,
+        CommonModule,
+        NgSelectModule,
+        EformImportedModule,
+        GallerizeModule,
+        LightboxModule,
+        GalleryModule,
+        FormsModule,
+        FontAwesomeModule,
+        CasesModule,
+        SharedPnModule
+    ]
 })
 export class ContractInspectionCaseModule {
 }
